@@ -399,3 +399,48 @@ footer p a:hover {
     color: #9f26aa;
     text-decoration: none;
 }
+
+/* ===== 보라색 테마 추가 ===== */
+
+/* 전체 페이지 배경 */
+body {
+    background-color: #6a0dad; /* 진한 보라색 */
+}
+
+/* 헤더 필터 색상 (상단 배경 위 투명 필터) */
+.header-filter::before {
+    background: rgba(106, 13, 173, 0.6);
+}
+
+/* 메인 컨텐츠 박스 배경을 보라색 톤으로 */
+.main {
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+/* 번갈아 나오는 섹션 배경 */
+.section.alt {
+    background-color: #7b1fa2;
+}
+
+/* 네비게이션 활성화 상태 보라색 */
+.nav-pills .nav-item .nav-link.active {
+    background-color: #9c27b0;
+    box-shadow: 0 5px 20px 0 rgba(0,0,0,.2), 0 13px 24px -11px rgba(156,39,176,.6);
+}
+
+/* 버튼 보라색 */
+.btn-primary {
+    background-color: #9c27b0;
+    border-color: #9c27b0;
+}
+.btn-primary:hover {
+    background-color: #ab47bc;
+    border-color: #ab47bc;
+}
+
+/* 드롭다운 hover 색상 보라색 */
+.dropdown-menu .dropdown-item:hover {
+    background-color: #9c27b0;
+    color: #fff;
+}
+
