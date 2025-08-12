@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="ko">
 <head>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>shyun-28</title>
@@ -16,14 +17,15 @@
         crossorigin="anonymous">
 
   <!-- Material Kit CSS (오타 수정: stylesheet) -->
-  <link rel="stylesheet"
+  <!--<link rel="stylesheet"
         href="https://rawcdn.githack.com/creativetimofficial/material-kit/5a2f0f7/assets/css/material-kit.css">
-
+-->
   <!-- Custom -->
   <link rel="stylesheet" href="style.css">
 </head>
 <body class="profile-page">
   <!-- Navbar -->
+   <!-- Navbar 상단 좌측, 우측 아이콘 없앰!
   <nav class="navbar navbar-color-on-scroll navbar-transparent fixed-top navbar-expand-lg" color-on-scroll="100" id="sectionsNav">
     <div class="container">
       <div class="navbar-translate">
@@ -46,7 +48,7 @@
       </div>
     </div>
   </nav>
-
+-->
   <!-- Header -->
   <div class="page-header header-filter" data-parallax="true"
        style="background-image:url('http://wallpapere.org/wp-content/uploads/2012/02/black-and-white-city-night.png');">
@@ -61,15 +63,17 @@
           <div class="col-md-6 ml-auto mr-auto">
             <div class="profile text-center">
               <div class="avatar">
-                <img src="/assets/profile.jpg" alt="Profile" class="img-raised rounded-circle img-fluid">
+                <img src="assets/profile.jpg" alt="Profile" class="img-raised rounded-circle img-fluid">
               </div>
               <div class="name">
                 <h3 class="title">Seunghee Yun</h3>
-                <h6>M.S Student</h6>
+                <h6>M.S. Integrated Student in SPARO Lab</h6>
+                <h6>Department of Electrical & Computer Engineering</h6>
+                <h6>Inha University</h6>
                 <a href="https://github.com/shyun-28" class="btn btn-just-icon btn-link" target="_blank" rel="noopener" aria-label="GitHub">
                   <i class="fa fa-github"></i>
                 </a>
-                <a href="https://linkedin.com/in/your-id" class="btn btn-just-icon btn-link" target="_blank" rel="noopener" aria-label="LinkedIn">
+                <a href="https://www.linkedin.com/in/seunghee-yun-b94abb379" class="btn btn-just-icon btn-link" target="_blank" rel="noopener" aria-label="LinkedIn">
                   <i class="fa fa-linkedin"></i>
                 </a>
                 <a href="33shyun2833@gmail.com" class="btn btn-just-icon btn-link" aria-label="Mail">
@@ -83,7 +87,8 @@
         <!-- 소개 -->
         <div id="about" class="description text-center">
           <p>
-          	안뇽! 나는 멋쟁이
+            <strong>✉️ Contact ✉️<br></strong>
+            <strong>33shyun2833@gmail.com</strong>
           </p>
         </div>
 
@@ -94,12 +99,14 @@
               <ul class="nav nav-pills nav-pills-icons justify-content-center" role="tablist">
                 <li class="nav-item">
                   <a class="nav-link active" href="#About Me" role="tab" data-toggle="tab">
-                    <i class="material-icons">camera</i> About Me
+                    <i class="material-icons">account_circle</i> 
+                    <span class="nav-text">ABOUT ME</span>
                   </a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="#Projects" role="tab" data-toggle="tab">
-                    <i class="material-icons">palette</i> Projects
+                    <i class="material-icons">sort</i>
+                    <span class="nav-text"> Projects </span>
                   </a>
                 </li>
               </ul>
@@ -108,35 +115,86 @@
         </div>
 
         <!-- 탭 콘텐츠 -->
-        <div class="tab-content tab-space">
-          <div class="tab-pane active text-center gallery" id="About Me">
-            <div class="row">
-              <div class="col-md-3 ml-auto">
-                <img src="https://images.unsplash.com/photo-1524498250077-390f9e378fc0?w=751&q=80" class="rounded" alt="">
-                <img src="https://images.unsplash.com/photo-1528249227670-9ba48616014f?w=357&q=80" class="rounded" alt="">
-              </div>
-              <div class="col-md-3 mr-auto">
-                <img src="https://images.unsplash.com/photo-1521341057461-6eb5f40b07ab?w=334&q=80" class="rounded" alt="">
-                <img src="https://images.unsplash.com/photo-1506667527953-22eca67dd919?w=750&q=80" class="rounded" alt="">
-              </div>
-            </div>
-          </div>
+<div class="tab-content tab-space">
+  <div class="tab-pane active text-center" id="About Me">
+    <div class="cv-section text-left">
 
-          <div class="tab-pane text-center gallery" id="Projects">
-            <div class="row">
-              <div class="col-md-3 ml-auto">
-                <img src="https://images.unsplash.com/photo-1524498250077-390f9e378fc0?w=751&q=80" class="rounded" alt="">
-                <img src="https://images.unsplash.com/photo-1506667527953-22eca67dd919?w=750&q=80" class="rounded" alt="">
-                <img src="https://images.unsplash.com/photo-1505784045224-1247b2b29cf3?w=750&q=80" class="rounded" alt="">
-              </div>
-              <div class="col-md-3 mr-auto">
-                <img src="https://images.unsplash.com/photo-1504346466600-714572c4b726?w=750&q=80" class="rounded" alt="">
-                <img src="https://images.unsplash.com/photo-1494028698538-2cd52a400b17?w=334&q=80" class="rounded" alt="">
-              </div>
-            </div>
-          </div>
-          </div>
+      <!-- Education -->
+      <div class="cv-block">
+        <h3 class="cv-title">Education</h3>
+        <hr>
+        <div class="cv-item">
+          <div class="cv-date">2024 – Present</div>
+          <div class="cv-content"><strong>M.S. Integrated Program</strong>, SPARO Lab, Inha University</div>
         </div>
+        <div class="cv-item">
+          <div class="cv-date">2021 – 2024</div>
+          <div class="cv-content"><strong>B.S.</strong>, Mechanical Engineering, Kookmin University</div>
+        </div>
+        <div class="cv-item">
+          <div class="cv-date">2018 – 2020</div>
+          <div class="cv-content"><strong>B.S.</strong>, Computer Science, The Korean Academic Credit Bank System</div>
+        </div>
+      </div>
+
+      <!-- Research Interests -->
+      <div class="cv-block">
+        <h3 class="cv-title">Research Interests</h3>
+        <hr>
+        <div class="cv-item"><div class="cv-content">Autonomous Driving System</div></div>
+        <div class="cv-item"><div class="cv-content">Simultaneous Localization and Mapping (SLAM)</div></div>
+        <div class="cv-item"><div class="cv-content">Robotic Control Systems</div></div>
+        <div class="cv-item"><div class="cv-content">Machine Learning & Deep Learning</div></div>
+      </div>
+
+      <!-- Experience -->
+      <div class="cv-block">
+        <h3 class="cv-title">Experience</h3>
+        <hr>
+        <div class="cv-item">
+          <div class="cv-date">2024 – Present</div>
+          <div class="cv-content"><strong>Research Intern</strong>, SPARO Lab</div>
+        </div>
+        <div class="cv-item">
+          <div class="cv-date">2023 – 2024</div>
+          <div class="cv-content"><strong>Research Assistant</strong>, Robotics & Control Lab, Kookmin University</div>
+        </div>
+        <div class="cv-item">
+          <div class="cv-date">2017 – 2019</div>
+          <div class="cv-content"><strong>Database Engineer</strong>, Jeongboline Company</div>
+        </div>
+      </div>
+
+      <!-- Certifications -->
+      <div class="cv-block">
+        <h3 class="cv-title">Certifications</h3>
+        <hr>
+        <div class="cv-item"><div class="cv-date">2024-09-10</div><div class="cv-content">AI-900</div></div>
+        <div class="cv-item"><div class="cv-date">2019-11-22</div><div class="cv-content">Information Processing Industrial Engineer</div></div>
+        <div class="cv-item"><div class="cv-date">2018-12-20</div><div class="cv-content">Administrative Manager Grade 3</div></div>
+        <div class="cv-item"><div class="cv-date">2018-12-11</div><div class="cv-content">Network Manager Grade 2</div></div>
+        <div class="cv-item"><div class="cv-date">2017-01-13</div><div class="cv-content">OCJP (Oracle Certified Java Programmer)</div></div>
+      </div>
+
+      <!-- Awards -->
+      <div class="cv-block">
+        <h3 class="cv-title">Awards</h3>
+        <hr>
+        <div class="cv-item"><div class="cv-date">2024</div><div class="cv-content">Kookmin University Capstone Design Idea Contest — Grand Prize</div></div>
+        <div class="cv-item"><div class="cv-date">2024</div><div class="cv-content">Kookmin Engineering FESTA Engineering Design Contest — Bronze Prize</div></div>
+      </div>
+
+      <!-- Skills -->
+      <div class="cv-block">
+        <h3 class="cv-title">Skills</h3>
+        <hr>
+        <div class="cv-item"><div class="cv-content">C, Java, Python, C++, C#, ROS, PyTorch, MATLAB, MySQL</div></div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
 
         <!-- 연락처 -->
         <div id="contact" class="text-center pb-5">

@@ -3,11 +3,12 @@ html *{
 }
 
 .h6, h6 {
-    font-size: .75rem !important;
+    font-size: 0.9rem !important;
     font-weight: 500;
     font-family: Roboto,Helvetica,Arial,sans-serif;
     line-height: 1.5em;
-    text-transform: uppercase;
+    text-transform: none;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .name h6 {
@@ -144,6 +145,13 @@ a .material-icons {
     transform: translate3d(0,-50%,0);
 }
 
+#about {
+    font-family: 'Montserrat', sans-serif; /* 동일 폰트 적용 */
+    font-size: 1rem; /* 필요 시 크기 조절 */
+    line-height: 1.5em;
+}
+
+
 .img-raised {
     box-shadow: 0 5px 15px -8px rgba(0,0,0,.24), 0 8px 10px -5px rgba(0,0,0,.2);
 }
@@ -197,24 +205,24 @@ p {
     border-radius: 4px;
 }
 
-.nav-pills .nav-item .nav-link.active {
-    color: #fff;
-    background-color: #9c27b0;
-    box-shadow: 0 5px 20px 0 rgba(0,0,0,.2), 0 13px 24px -11px rgba(156,39,176,.6);
+.nav.nav-pills.nav-pills-icons {
+    display: flex;
+    justify-content: center;
+    gap: 28px; /* 아이콘끼리 너무 가까움 → 간격 확보 */
 }
+.nav-pills .nav-item { margin: 0; }
 
 .nav-pills .nav-item .nav-link {
-    line-height: 24px;
-    font-size: 12px;
-    font-weight: 500;
-    min-width: 100px;
-    color: #555;
-    transition: all .3s;
+    display: flex;
+    flex-direction: column; /* 아이콘 위, 텍스트 아래 */
+    align-items: center;
+    justify-content: center;
+    padding: 8px 6px;   
     border-radius: 30px;
-    padding: 10px 15px;
-    text-align: center;
+    min-width: 72px;
+    /* background-color: transparent; /* 활성화 배경 제거 */
+    box-shadow: none;
 }
-
 .nav-pills .nav-item .nav-link:not(.active):hover {
     background-color: rgba(200,200,200,.2);
 }
@@ -428,5 +436,92 @@ footer p a:hover {
 /* 모바일에서 약간 더 여유 */
 @media (max-width: 576px){
   .profile .avatar{ margin-top: -30px; }
+}
+
+/* 비활성화 상태 */
+.nav-pills .nav-item .nav-link i.material-icons {
+    background-color: white; /* 배경 흰색 */
+    color: #969b9b; /* 아이콘 회색 (밝은 회색톤) */
+    border-radius: 50%;
+    padding: 12px;
+    font-size: 24px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.nav-pills .nav-link.active {
+    background-color: #b0c2ed !important; /* 원하는 색 (하늘색) */
+    color: white !important; /* 글자색 (필요 시) */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* 부드러운 그림자 */
+    border-radius: 8px; /* 필요 시 모서리 둥글게 */
+}
+/* 활성화 상태 */
+.nav-pills .nav-item .nav-link.active i.material-icons {
+    background-color: white; 
+    color: #b0c2ed; 
+    margin-bottom: 6px;
+}
+
+/* 글씨 스타일 (활성화/비활성 동일) */
+.nav-pills .nav-item .nav-link .nav-text {
+    font-size: 10px;
+    line-height: 1.2;
+    font-weight: 600;
+    color: #555; /* 비활성 글씨 색 */
+    text-transform: uppercase;
+}
+
+.nav-pills .nav-item .nav-link.active .nav-text {
+    color: white; /* 활성화 시에도 동일 색 유지 */
+}
+.cv-section {
+  max-width: 860px;
+  margin: 0 auto;
+}
+
+.cv-block {
+  border: 1px solid #ccc;         /* 대분류 테두리 */
+  border-radius: 8px;
+  padding: 16px 20px;
+  margin: 12px 0 24px;
+  margin-bottom: 24px;            /* 블록 사이 간격 */
+  background-color: #e3e6df;      /* 배경색 */
+}
+
+.cv-title {
+  font-size: 20px;
+  font-weight: 700;
+  margin-top: 5px;
+  margin-bottom: 8px;
+}
+
+.cv-section hr {
+  margin: 0 0 12px;
+  border: none;
+  border-top: 2px solid #ccc;
+}
+
+.cv-item {
+  display: flex;
+  margin-bottom: 8px;
+}
+
+.cv-date {
+  width: 160px; /* 날짜 영역 고정 폭 */
+  font-weight: 600;
+  color: #666;
+}
+
+.cv-content {
+  flex: 1;
+  color: #333;
+}
+
+.cv-section .cv-block:first-child {
+  margin-top: 0; /* 첫 번째 블록은 위 여백 제거 */
 }
 
