@@ -95,12 +95,15 @@ a .material-icons {
 
 .page-header {
     height: 100vh;
+    background-image: url('assets/background.jpg');
     background-size: cover;
     margin: 0;
     padding: 0;
     border: 0;
     display: flex;
     align-items: center;
+    background-color: rgba(255, 255, 255, 0.1); /* 흰색, 30% 투명 */
+  background-blend-mode: lighten;
 }
 
 .header-filter:after, .header-filter:before {
@@ -115,7 +118,7 @@ a .material-icons {
 }
 
 .header-filter::before {
-    background: rgba(0,0,0,.5);
+    background: background: transparent !important;;
 }
 
 .main-raised {
@@ -220,7 +223,7 @@ p {
     padding: 8px 6px;   
     border-radius: 30px;
     min-width: 72px;
-    /* background-color: transparent; /* 활성화 배경 제거 */
+    /* background-color: transparent; 활성화 배경 제거 */
     box-shadow: none;
 }
 .nav-pills .nav-item .nav-link:not(.active):hover {
